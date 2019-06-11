@@ -138,7 +138,7 @@ iteration = 0
 # At the critical temperature, C = J/(k*T)
 C = np.log(1+np.sqrt(2))/2
 
-# If you want to input the parameters, use below variables.
+# If you want to input the parameters manually, use below variables.
 #J = 
 #k = 1.3806488e-23
 #T = 
