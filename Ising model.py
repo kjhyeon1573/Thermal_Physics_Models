@@ -12,20 +12,20 @@
          .. - + - + ..    - = -1
             : : : :
             
-        In Ising model, hamiltonian of the two neighbor atoms is,
+        In Ising model, the hamiltonian of two neighbor atoms is,
             
-            H = - J * [S_(i,j) * S_(i',j')],    S_(i,j) is the state of the atom at the point (i,j)
+            H = - J * [S_(i,j) * S_(i',j')],    S_(i,j) is the state of an atom at the point (i,j)
                                                 J is a constant.
                                                     J > 0: Ferro-magnetic
                                                     J < 0: Anti ferro-magnetic
                                                     J = 0: Non interacting model
         
-        The hamiltonian of a lattice point is
+        The hamiltonian of a lattice point (i,j) is
         
             H = - J * S_(i,j) * [S_(i+1,j) + S_(i-1,j) + S_(i,j+1) + S_(i,j-1)]
     
     
-    How to calculate phase transition?
+    How to view phase transition?
     
         Use Metropolis Algorithm. 
             
@@ -42,7 +42,9 @@
             5. If H' > H, state return the unflipped state by probability exp[-(H-H')/kT]
                or remains remains the flipped state. (k is boltzmann constant, T is temperature)
         
-            6. Repeat 1-5.
+            6. Repeat 1-5 for all of atoms in lattice, that is one cycle.
+            
+            7. Repeat many cycle.
             
 """
 
