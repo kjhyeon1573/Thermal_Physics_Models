@@ -72,7 +72,7 @@ def down_state(shape):
 def random_state(shape):
     
     # All of initial atom states set to randomly
-    n_state = np.random.randint(2, size=shape)-2
+    n_state = 2*(np.random.randint(2, size=shape)-1/2)
     
     return n_state
 
