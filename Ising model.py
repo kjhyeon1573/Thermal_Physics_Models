@@ -12,7 +12,7 @@
          .. - + - + ..    - = -1
             : : : :
             
-        In Ising model, the hamiltonian of two neighbor atoms is,
+        In Ising model, the hamiltonian with two neighbor atoms is,
             
             H = - J * [S_(i,j) * S_(i',j')],    S_(i,j) is the state of an atom at the point (i,j)
                                                 J is a constant.
