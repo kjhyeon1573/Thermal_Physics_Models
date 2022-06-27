@@ -25,7 +25,7 @@
             H = - J * S_(i,j) * [S_(i+1,j) + S_(i-1,j) + S_(i,j+1) + S_(i,j-1)]
     
     
-    How to view phase transition?
+    How to simulate phase transition?
     
         Use Metropolis Algorithm. 
             
